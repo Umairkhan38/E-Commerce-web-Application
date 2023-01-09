@@ -1,0 +1,42 @@
+.Product {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 1;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 10px;
+  max-width: 260px;
+  padding: 22px;
+  max-height: 450px;
+  min-width: 100px;
+  border-radius: 8px;
+}
+
+.Product:hover{
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: box-shadow 0.4s ease-in-out;
+    cursor:pointer;
+}
+
+
+
+.Product > img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.Product > button {
+  padding: 7px 23px;
+  border-radius: 15px;
+  background-color: #f7ca00;
+  border: 1px solid #f7ca00;
+  cursor: pointer;
+  margin:3px 0px;
+}
+
+.Product > button:hover {
+  box-shadow: 1px 3px 6px grey;
+}

@@ -1,0 +1,192 @@
+.Header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1b7782;
+    box-shadow: 4px 1px 35px 0px #343030;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+    width:100%;
+    overflow: hidden;
+}
+
+.header_logo{
+    width:100px;
+    object-fit: contain;
+    margin:5px 20px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+.leftItems{
+    display:flex;
+    margin:0px 10px;
+
+}
+
+.header_logo:hover{
+    border:1px solid white;
+    border-radius:5px;
+    padding:10px 8px 0px  8px;
+}
+
+.header_search{
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    justify-content: flex-end;
+}
+
+.header__input{
+    height:14px;
+    padding: 10px;
+    border:none;
+    border-radius: 10px 0px 0px 10px;
+    width:300px;
+}
+
+.headerOption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0px 20px;
+    
+
+}
+
+.header_nav{
+    display: flex;
+    justify-content:flex-end;
+    width:100%;
+    
+}
+
+.headerOptLineOne{
+    font-size: 12px;
+}
+
+.headerOptLineTwo{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.headerOptLineTwo:hover{
+    color:#c9efff;
+}
+
+.yellowIcon{
+    background-color: #FEBD69;
+    color: black;
+    height: 22px !important;
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.headerOption_basket{
+display:flex;
+align-items: center;
+cursor: pointer;
+margin:0px 3px;
+}
+
+.headerOption_basket:hover{
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.basketCount{
+    margin:0px 10px;
+}
+
+.icon{
+    display:none;
+}
+
+
+@media only screen and (max-width: 930px) {
+
+.header_search{
+    display:none;
+}
+
+.leftItems{
+    display:none;
+}
+
+.headerOption{
+    display:none;
+}
+
+.icon{
+     display:block;
+    margin-left:15px;    
+}
+
+.headerOptLineTwo{
+    font-size: 20px;
+}
+
+.resIcon{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-left: 26px;
+    margin-top: 19px;
+}
+
+.headeroption{
+    width: 100%;
+    margin: 16px 33px;
+}
+
+.responsive{   
+display: flex;
+flex-direction: column;
+height:380px;
+}
+
+.responsive .leftItems{
+    display:block;
+}
+
+.responsive .header_nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.responsive .header_search{
+    display:block;
+    width:auto;
+    justify-content: center;
+    margin:3px auto;
+}
+
+.responsive .header__input{
+    width:265px;
+}
+
+
+.responsive .yellowIcon{
+    margin: -12px 0px;
+}
+
+.responsive .headerOption{
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.responsive .headerOption_basket{
+    justify-content: center;
+    margin: 12px 0px;
+}
+
+}
+

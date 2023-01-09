@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Cinzel:400,700,900|Lato:100,300,400,700,900|Lobster|Lora:400,700|Mansalva|Muli:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Roboto:100,300,400,500,700,900&display=swap");
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+ 
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    color: #03555e;
+    background-image: url('https://www.w3schools.com/w3images/sailboat.jpg');
+    background-color: #413f51; /* Used if the image is unavailable */
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+  }
+  
+  .wrapper {
+    height: 10vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 39ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-family: "Lobster", cursive;
+    font-weight: 700;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+ 
+
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+
+  section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* margin-right:119px; */
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+    margin:70px;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #1B7782 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1B7782;
+    margin: 1em 0;
+  }
+  
+
+  .icon-wrapper {
+    background-color: #1B7782;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .card:hover {
+    background-position: 0 100%;
+  }
+  .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #1B7782;
+  }
+  .card:hover h3 {
+    color: #ffffff;
+  }
+  .card:hover p {
+    color: #f0f0f0;
+  }
+
+
+  @media only screen and (max-width: 930px) {
+    .typing-demo{
+      font-size: 14px;
+
+    }
+
+
+  }
+
+
+  @media screen and (min-width: 768px) {
+  
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+
+    }
+  }
+  @media screen and (min-width: 992px) {
+  
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
